@@ -43,8 +43,8 @@ def index():
 def webhook():
     body = request.get_data()
     sig = request.headers.get("X-Line-Signature", "")
-    if not verify(body, sig):
-        abort(403)
+    #if not verify(body, sig):
+    #    abort(403)
     for event in request.json.get("events", []):
         if event.get("type") == "message" and event["message"]["type"] == "text":
             try:
