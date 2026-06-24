@@ -1,4 +1,3 @@
-
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/api/webhook" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }]
 }
